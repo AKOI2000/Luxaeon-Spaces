@@ -1,0 +1,78 @@
+// ============================================
+// layout/_grid.scss
+// Reusable grid / flex utility classes
+// ============================================
+
+@use "../utils/mixin" as *;
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+
+.grid-2 {
+  @extend .grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond(mds) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-3 {
+  @extend .grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(mds) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-4 {
+  @extend .grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-5 {
+  @extend .grid;
+  grid-template-columns: 65% 35%;
+  gap: 1rem;
+
+  @include respond(mds) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

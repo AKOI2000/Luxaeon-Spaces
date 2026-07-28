@@ -1,0 +1,101 @@
+// ============================================
+// sections/home/_cta.scss
+// ============================================
+
+@use "../../utils/mixin" as *;
+
+.home_cta {
+  &-grid {
+    align-items: start;
+    margin-top: 6rem;
+  }
+
+  h1 {
+    font-weight: 700;
+    span {
+      color: var(--color-grey);
+    }
+  }
+
+  &-form {
+    gap: 1.6rem;
+    width: 90%;
+
+    @include respond (mds) {
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      border-bottom: 1px solid var(--color-text);
+      padding: 1.4rem 1.6rem;
+      color: var(--color-text);
+
+      &::placeholder {
+        color: var(--color-grey);
+      }
+    }
+
+    .btn.btn--inverted {
+      background-color: var(--color-text);
+      color: var(--color-bg);
+      width: 100%;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+      }
+    }
+
+    .btn {
+      align-self: flex-start;
+    }
+  }
+
+  &-contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    .heading {
+      h2 {
+        font-weight: 700;
+      }
+
+      p{
+        font-size: 2rem;
+      }
+    }
+
+    &-box {
+      margin-top: auto;
+      display: flex;
+      gap: 3rem;
+
+      @include respond(mds) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      h4 {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      p,
+      a {
+        font-weight: 300;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

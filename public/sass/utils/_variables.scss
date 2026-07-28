@@ -1,0 +1,37 @@
+// ============================================
+// utils/_variables.scss
+// Breakpoints map (compile-time) + root custom properties
+// ============================================
+
+// ⚠️ Placeholder values — swap in your real breakpoints here.
+$breakpoints: (
+  xxxl: 1600px,
+  xl: 1440px,
+  lg: 1200px,
+  mdl: 1024px,
+  md: 900px,
+  mds: 768px,
+  sm: 576px,
+  xs: 400px,
+);
+
+:root {
+  // --- Color: two colours + one grey, per spec ---
+  --color-primary: #000000; // black — text, borders, primary surfaces
+  --color-secondary: #ffffff; // white — background, inverted text
+  --color-grey: #8d8d8d; // ⚠️ placeholder — subtle/secondary text
+
+  --color-bg: var(--color-secondary);
+  --color-text: var(--color-primary);
+  --color-text-muted: var(--color-grey);
+  --color-border: var(--color-primary);
+
+  // --- Fonts ---
+  --font-display: var(--font-bricolage), "Iowan Old Style", serif;
+  --font-body: var(--font-jakarta), -apple-system, "Helvetica Neue", sans-serif;
+
+  // --- Motion ---
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s;
+  --dur-base: 0.5s;
+}

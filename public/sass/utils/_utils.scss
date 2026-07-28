@@ -1,0 +1,61 @@
+// ============================================
+// utils/_utils.scss
+// Reusable functions + small utility classes
+// ============================================
+
+@use "sass:math";
+@use "./variables" as *;
+@use "./mixin" as *;
+
+@function strip-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+// px -> rem, relative to a 10px root (62.5%)
+@function rem($px) {
+  @return math.div(strip-unit($px), 10) * 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-grey {
+  color: var(--color-text-muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page-start {
+  padding: 12rem 7rem 10rem;
+
+  @include respond(lg) {
+    padding: 12rem 5rem;
+  }
+
+  @include respond(mdl) {
+    padding: 12rem 4rem;
+  }
+
+  @include respond(mds) {
+    padding: 12rem 3rem 14rem;
+  }
+
+  @include respond(sm) {
+    padding: 13rem 3rem 14rem;
+  }
+
+  @include respond(xs) {
+    padding: 13rem 2rem 14rem;
+  }
+}

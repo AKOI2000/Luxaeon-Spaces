@@ -1,0 +1,98 @@
+// ============================================
+// sections/home/_testimonials.scss
+// ============================================
+
+@use "../../utils/mixin" as *;
+
+.home_testimonials {
+  .heading {
+    text-align: center;
+    margin-bottom: 6rem;
+    h2 {
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+  }
+
+  &-lists {
+    grid-column: 1/3;
+
+    column-count: 2;
+    column-gap: 2rem;
+
+    @include respond(mds) {
+      column-count: 1;
+    }
+  }
+
+  &-item {
+    break-inside: avoid;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+
+    h5 {
+      font-weight: 500;
+    }
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      background: var(--color-border);
+      color: var(--color-bg);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+
+      @include respond(mds) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+
+      @include respond(mds) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      margin-top: 3rem;
+    }
+  }
+
+  // p:last-child {
+  //   margin-top: 1.6rem;
+  //   font-family: var(--font-display);
+  //   font-size: 2.2rem;
+  //   line-height: 1.3;
+  // }
+
+  &-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    height: 100%;
+
+    p {
+      font-size: 2rem;
+    }
+    h3 {
+      font-weight: 700;
+
+      span {
+        color: var(--color-grey);
+      }
+    }
+
+    .bottom {
+      margin-top: auto;
+    }
+  }
+
+  &-number {
+    font-family: var(--font-display);
+    font-size: 5rem;
+  }
+}

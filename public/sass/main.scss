@@ -1,0 +1,28 @@
+// ============================================
+// styles/main.scss
+// Single entry point, imported once in app/layout.tsx
+// ============================================
+
+@use "./utils/variables";
+@use "./utils/utils";
+
+@use "./base/reset";
+@use "./base/typography";
+
+@use "./layout/container";
+@use "./layout/grid";
+
+@use "./components/button";
+@use "./components/header";
+@use "./components/footer";
+
+@use "./sections/home/hero";
+@use "./sections/home/works";
+@use "./sections/home/services";
+@use "./sections/home/about";
+@use "./sections/home/testimonials";
+@use "./sections/home/faq";
+@use "./sections/home/cta";
+
+// Sections are @used from within their own page's stylesheet
+// (e.g. sections/home/main.scss), not aggregated here.

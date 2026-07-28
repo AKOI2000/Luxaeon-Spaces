@@ -1,0 +1,92 @@
+// ============================================
+// base/_typography.scss
+// Modular scale, ratio 1.25, base (h6) = 1.4rem
+// ============================================
+
+@use "sass:math";
+@use "../utils/mixin" as *;
+
+$type-ratio: 1.25;
+$type-base: 1.4rem; // h6
+
+@function scale-step($n) {
+  @return $type-base * math.pow($type-ratio, $n);
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem; // 15px base paragraph size
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h6 {
+  font-size: scale-step(1); // 1.4rem
+}
+
+h5 {
+  font-size: scale-step(2); // 1.75rem
+}
+
+h4 {
+  font-size: scale-step(3); // 2.1875rem
+}
+
+h3 {
+  font-size: scale-step(4); // 2.734375rem
+}
+
+h2 {
+  font-size: scale-step(5); // 3.41796875rem
+}
+
+h1 {
+  font-size: scale-step(6); // 4.271484375rem
+
+  @include respond(mds) {
+    font-size: scale-step(4);
+  }
+}
+
+small,
+.text-small {
+  font-size: 1.3rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background-color: var(--color-text);
+  display: inline-block;
+  padding: 0 0.8rem;
+  margin-bottom: 0.8rem;
+
+  &.inverted{
+    background: transparent;
+    border: 1px solid var(--color-bg);
+  }
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
+
+  &.margin-lg{
+    margin-bottom: 2rem;
+  }
+}

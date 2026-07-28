@@ -1,0 +1,112 @@
+// ============================================
+// components/_header.scss
+// ============================================
+
+@use "../utils/mixin" as *;
+
+.header {
+  border-bottom: 1px solid var(--color-border);
+
+  padding: 1rem 7rem;
+
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  background: var(--color-bg);
+
+  @include respond(lg) {
+    padding: 1rem 5rem;
+  }
+
+  @include respond(mds) {
+    padding: 1rem 3rem;
+  }
+
+  @include respond(xs) {
+    padding: 1rem 2rem;
+  }
+
+  // &_bar {
+  //   padding-block: 2rem;
+  // }
+
+  &_logo {
+    font-family: var(--font-display);
+    // font-size: 1.8rem;
+    // font-weight: 500;
+    max-width: 8rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &_nav {
+    display: flex;
+    gap: 3.2rem;
+
+    @include respond(mds) {
+      display: none;
+    }
+  }
+
+  &_link {
+    font-size: 1.4rem;
+
+    &:hover {
+      color: var(--color-text-muted);
+    }
+  }
+
+  &_actions {
+    gap: 1.6rem;
+
+    .btn {
+      @include respond(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &_toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 2.4rem;
+
+    span {
+      display: block;
+      height: 1px;
+      background: var(--color-primary);
+    }
+
+    @include respond(mds) {
+      display: flex;
+    }
+  }
+
+  &_mobile-nav {
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    border-top: 1px solid var(--color-border);
+
+    @include respond(mds) {
+      display: flex;
+    }
+  }
+
+  &_mobile-link {
+    padding-block: 1.6rem;
+    padding-inline: 3rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+}

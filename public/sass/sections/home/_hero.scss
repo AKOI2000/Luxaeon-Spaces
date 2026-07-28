@@ -1,0 +1,45 @@
+// ============================================
+// sections/home/_hero.scss
+// ============================================
+
+@use "../../utils/mixin" as *;
+
+.hero {
+  &-heading {
+    text-align: center;
+    width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+
+    @include respond (mds) {
+      width: 100%;
+    }
+
+    h1 {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+        line-height: 0.8;
+      // white-space: nowrap;
+    }
+  }
+
+  &_tagline {
+    text-align: center;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  &-img {
+    margin-top: 4rem;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-grey);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
