@@ -34,7 +34,7 @@ export default function HomeJournal() {
               className="journal__card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50%" }}
+              viewport={{ once: true, margin: "-40%" }}
               transition={{ duration: 0.6, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
             >
               <Link href={`/journal/${post.slug}`}>

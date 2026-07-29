@@ -65,22 +65,31 @@ function Navbar() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="header__mobile-bar flex-between">
-                <span className="header_logo">
+                <motion.span
+                  className="header_logo"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
                   <Image
                     src={"/logo2.png"}
                     alt="Luxaeon Spaces"
                     width={500}
                     height={400}
                   />
-                </span>
-                <button
+                </motion.span>
+
+                <motion.button
                   className="header__toggle header__toggle--close"
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
                 >
                   <span />
                   <span />
-                </button>
+                </motion.button>
               </div>
 
               <nav className="header__mobile-nav" aria-label="Mobile">
@@ -90,8 +99,8 @@ function Navbar() {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
-                      duration: 0.4,
-                      delay: 0.1 + i * 0.05,
+                      duration: 0.5,
+                      delay: 0.3 + i * 0.05,
                       ease: [0.16, 1, 0.3, 1],
                     }}
                   >
@@ -109,7 +118,7 @@ function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.4,
-                    delay: 0.1 + NAV_LINKS.length * 0.05,
+                    delay: 0.3 + NAV_LINKS.length * 0.05,
                     ease: [0.16, 1, 0.3, 1],
                   }}
                 >
