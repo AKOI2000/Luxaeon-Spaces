@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,75 +17,114 @@ function Navbar() {
 
   return (
     <header className="header">
-      <div className="nav-container header_bar flex-between">
-        <Link href="/" className="header_logo" onClick={() => setOpen(false)}>
-          <Image src={"/logo2.png"} alt="Luxaeon Spaces" width={500} height={400} />
+      <div className="nav-container flex-between">
+        <Link
+          href="/"
+          className="header_logo"
+          onClick={() => setOpen(false)}
+          aria-label="Luxaeon spaces home"
+        >
+          <Image
+            src={"/logo2.png"}
+            alt="Luxaeon Spaces"
+            width={500}
+            height={400}
+          />
         </Link>
 
-        <nav className="header_nav" aria-label="Primary">
-          {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className="header__link">
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="header_actions flex-center">
-          <Link href="/contact" className="btn">
-            Get in touch
-          </Link>
-          <button
-            className="header_toggle"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-          </button>
-        </div>
-
-        {open && (
-          <nav
-            className="header_mobile-nav"
-            aria-label="Mobile"
-          >
+        <div className="header__nav-group">
+          <nav className="header__nav" aria-label="Primary">
             {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="header_mobile-link"
-                onClick={() => setOpen(false)}
-              >
+              <Link key={link.href} href={link.href} className="header__link">
                 {link.label}
               </Link>
             ))}
           </nav>
-        )}
+          <Link href="/contact" className="header__cta">
+            Get in Touch
+          </Link>
+        </div>
 
-        {/* <AnimatePresence>
+        <button
+          className="header__toggle"
+          onClick={() => setOpen(true)}
+          aria-expanded={open}
+          aria-label="Open menu"
+        >
+          <span />
+          <span />
+        </button>
+
+        <AnimatePresence>
           {open && (
-            <motion.nav
-              className="header_mobile-nav"
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              aria-label="Mobile"
+            <motion.div
+              className="header__mobile-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="header_mobile-link"
+              <div className="header__mobile-bar flex-between">
+                <span className="header_logo">
+                  <Image
+                    src={"/logo2.png"}
+                    alt="Luxaeon Spaces"
+                    width={500}
+                    height={400}
+                  />
+                </span>
+                <button
+                  className="header__toggle header__toggle--close"
                   onClick={() => setOpen(false)}
+                  aria-label="Close menu"
                 >
-                  {link.label}
-                </Link>
-              ))}
-            </motion.nav>
+                  <span />
+                  <span />
+                </button>
+              </div>
+
+              <nav className="header__mobile-nav" aria-label="Mobile">
+                {NAV_LINKS.map((link, i) => (
+                  <motion.div
+                    key={link.href}
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.4,
+                      delay: 0.1 + i * 0.05,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                  >
+                    <Link
+                      href={link.href}
+                      className="header__mobile-link"
+                      onClick={() => setOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: 0.1 + NAV_LINKS.length * 0.05,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                >
+                  <Link
+                    href="/contact"
+                    className="header__mobile-link header__mobile-link--cta"
+                    onClick={() => setOpen(false)}
+                  >
+                    Get in Touch
+                  </Link>
+                </motion.div>
+              </nav>
+            </motion.div>
           )}
-        </AnimatePresence> */}
+        </AnimatePresence>
       </div>
     </header>
   );

@@ -22,6 +22,7 @@
 @use "./sections/home/about";
 @use "./sections/home/testimonials";
 @use "./sections/home/faq";
+@use "./sections/home/home-journal";
 @use "./sections/home/cta";
 
 // Sections are @used from within their own page's stylesheet

@@ -5,19 +5,15 @@
 @use "../utils/mixin" as *;
 
 .header {
-  border-bottom: 1px solid var(--color-border);
-
-  padding: 1rem 7rem;
-
+  // position: relative;
+  z-index: 100;
   width: 100%;
-
   position: fixed;
+  padding: 1rem 7rem;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
   top: 0;
   left: 0;
-
-  z-index: 999;
-
-  background: var(--color-bg);
 
   @include respond(lg) {
     padding: 1rem 5rem;
@@ -30,10 +26,6 @@
   @include respond(xs) {
     padding: 1rem 2rem;
   }
-
-  // &_bar {
-  //   padding-block: 2rem;
-  // }
 
   &_logo {
     font-family: var(--font-display);
@@ -48,65 +40,164 @@
     }
   }
 
-  &_nav {
+  // --- Desktop bordered nav group ---
+  &__nav-group {
     display: flex;
-    gap: 3.2rem;
+    align-items: stretch;
+    border: 1px solid var(--color-border);
 
     @include respond(mds) {
       display: none;
     }
   }
 
-  &_link {
-    font-size: 1.4rem;
+  &__nav {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 3.2rem;
+    font-size: 1.6rem;
+    border-left: 1px solid var(--color-border);
+    transition:
+      background var(--dur-fast) var(--ease-out),
+      color var(--dur-fast) var(--ease-out);
+
+    &:first-child {
+      border-left: none;
+    }
 
     &:hover {
-      color: var(--color-text-muted);
+      background: var(--color-primary);
+      color: var(--color-secondary);
     }
   }
 
-  &_actions {
-    gap: 1.6rem;
+  &__cta {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 3.2rem;
+    font-size: 1.6rem;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border-left: 1px solid var(--color-border);
+    transition:
+      background var(--dur-fast) var(--ease-out),
+      color var(--dur-fast) var(--ease-out);
 
-    .btn {
-      @include respond(sm) {
-        display: none;
+    &:hover {
+      background: var(--color-secondary);
+      color: var(--color-primary);
+    }
+  }
+
+  // --- Mobile hamburger toggle ---
+  &__toggle {
+    position: relative;
+    display: none;
+    width: 3rem;
+    height: 3rem;
+
+    span {
+      position: absolute;
+      left: 50%;
+      width: 100%; // ⚠️ assumption — bar width wasn't specified, adjust if needed
+      height: 1px;
+      background: var(--color-primary);
+      transform: translate(-50%, -50%);
+      transition:
+        transform var(--dur-fast) var(--ease-out),
+        background var(--dur-fast) var(--ease-out);
+
+      &:first-child {
+        top: calc(50% - 0.4rem);
+      }
+
+      &:last-child {
+        top: calc(50% + 0.4rem);
+      }
+    }
+
+    @include respond(mds) {
+      display: block;
+    }
+
+    &--close {
+      span {
+        background: var(--color-secondary);
+      }
+
+      span:first-child {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      span:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
       }
     }
   }
 
-  &_toggle {
+  // --- Fullscreen mobile menu ---
+  &__mobile-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    z-index: 200;
     display: none;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 2.4rem;
-
-    span {
-      display: block;
-      height: 1px;
-      background: var(--color-primary);
-    }
 
     @include respond(mds) {
       display: flex;
     }
   }
 
-  &_mobile-nav {
-    display: none;
-    flex-direction: column;
-    overflow: hidden;
-    border-top: 1px solid var(--color-border);
+  &__mobile-bar {
+    padding: 2rem 7rem 1rem;
+
+    @include respond(lg) {
+      padding: 2rem 5rem 1rem;
+    }
 
     @include respond(mds) {
-      display: flex;
+      padding: 2rem 3rem 1rem;
+    }
+
+    @include respond(xs) {
+      padding: 2rem 2rem 1rem;
+    }
+
+    .header__logo {
+      color: var(--color-secondary);
     }
   }
 
-  &_mobile-link {
+  &__mobile-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.4rem;
+    gap: 0.4rem;
+  }
+
+  &__mobile-link {
+    display: block;
     padding-block: 1.6rem;
-    padding-inline: 3rem;
-    font-size: 1.6rem;
-    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-display);
+    font-size: 3.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &--cta {
+      color: var(--color-secondary);
+      opacity: 0.7;
+    }
   }
 }

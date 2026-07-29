@@ -5,9 +5,24 @@ export const PROJECTS = [
     category: "Residential",
     imgUrl: "/project-1.webp",
   },
-  { slug: "pinnacle", name: "Pinnacle", category: "Residential", imgUrl: "/project-2.webp" },
-  { slug: "nexus", name: "Nexus", category: "Commercial", imgUrl: "/project-3.webp" },
-  { slug: "canopy", name: "Canopy", category: "Residential", imgUrl: "/project-4.webp" },
+  {
+    slug: "pinnacle",
+    name: "Pinnacle",
+    category: "Residential",
+    imgUrl: "/project-2.webp",
+  },
+  {
+    slug: "nexus",
+    name: "Nexus",
+    category: "Commercial",
+    imgUrl: "/project-3.webp",
+  },
+  {
+    slug: "canopy",
+    name: "Canopy",
+    category: "Residential",
+    imgUrl: "/project-4.webp",
+  },
 ];
 
 export const SERVICES = [
@@ -100,5 +115,26 @@ export const FAQS = [
   {
     q: "Do you handle both residential and commercial projects?",
     a: "Yes, our studio works across both residential and commercial scopes.",
+  },
+];
+
+export const JOURNAL_POSTS = [
+  {
+    slug: "maximizing-small-spaces-with-smart-design",
+    title: "Maximizing Small Spaces with Smart Design",
+    excerpt:
+      "Learn clever design tricks, layout strategies, and space-saving solutions to make the most of compact interiors without compromising style or functionality.",
+    tag: "Interior Design",
+    date: "March 19, 2025",
+    imgUrl: "/journal-1.webp",
+  },
+  {
+    slug: "timeless-vs-trendy-finding-your-design-style",
+    title: "Timeless vs. Trendy: Finding Your Design Style",
+    excerpt:
+      "Explore the balance between classic and contemporary design, helping you choose elements that stand the test of time while embracing modern trends.",
+    tag: "Architecture",
+    date: "March 17, 2025",
+    imgUrl: "/journal-2.webp",
   },
 ];
