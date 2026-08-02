@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import fitty from "fitty";
+import { motion } from "framer-motion";
 
 function HomeHero() {
   const headingRef = useRef(null);
@@ -37,13 +38,59 @@ function HomeHero() {
   return (
     <section className="page-start">
       <div className="hero-heading">
-        <h1 ref={headingRef}>Spaces</h1>
-        <p className="hero_tagline" ref={taglineRef}>
-         That Speak Before You Do
-        </p>
+        <motion.h1
+          ref={headingRef}
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+        >
+          Spaces
+        </motion.h1>
+        <motion.p
+          className="hero_tagline"
+          ref={taglineRef}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(5px)",
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+          }}
+          transition={{
+            delay: 0.5,
+            duration: 0.5,
+          }}
+        >
+          That Speak Before You Do
+        </motion.p>
       </div>
 
-      <div className="hero-img">
+      <motion.div
+        className="hero-img"
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          delay: 0.8,
+          duration: 0.6,
+        }}
+      >
         <Image
           src="/hero-img.avif"
           alt="Luxaeon Spaces"
@@ -51,7 +98,7 @@ function HomeHero() {
           width={1600}
           sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -39,6 +39,30 @@
 .page-start {
   padding: 12rem 7rem 10rem;
 
+  &.small {
+    padding: 12rem 7rem 5rem;
+
+    @include respond(lg) {
+      padding: 12rem 5rem 5rem;
+    }
+
+    @include respond(mdl) {
+      padding: 12rem 4rem 5rem;
+    }
+
+    @include respond(mds) {
+      padding: 12rem 3rem 9rem;
+    }
+
+    @include respond(sm) {
+      padding: 13rem 3rem 9rem;
+    }
+
+    @include respond(xs) {
+      padding: 13rem 2rem 9rem;
+    }
+  }
+
   @include respond(lg) {
     padding: 12rem 5rem;
   }

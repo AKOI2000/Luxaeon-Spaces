@@ -21,7 +21,7 @@
     gap: 1.6rem;
     width: 90%;
 
-    @include respond (mds) {
+    @include respond(mds) {
       width: 100%;
     }
 
@@ -68,7 +68,7 @@
         font-weight: 700;
       }
 
-      p{
+      p {
         font-size: 2rem;
       }
     }
@@ -95,6 +95,22 @@
 
       a {
         text-decoration: underline;
+      }
+
+
+       .social-box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: fit-content;
+        a {
+          font-size: 2rem;
+          transition: all .5s ease-in-out;
+
+          &:hover {
+           transform: scale(1.05) translateX(1px);
+          }
+        }
       }
     }
   }

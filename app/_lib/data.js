@@ -27,29 +27,29 @@ export const PROJECTS = [
 
 export const SERVICES = [
   {
-    title: "Concept Development",
+    title: "Interior design and space planning",
     description:
       "We shape the early vision for a space — mood, material language, and spatial intent before a single wall moves.",
-    imgUrl: "/service-1.avif",
+    imgUrl: "/service-2.avif",
   },
   {
     title: "Project Management",
     description:
       "From contractors to timelines, we oversee the build so the design reaches completion intact.",
-    imgUrl: "/service-2.avif",
+    imgUrl: "/service-1.avif",
   },
-  {
-    title: "Interior Design & Space Planning",
-    description:
-      "Considered layouts and finishes tailored to how a space is actually lived in.",
-    imgUrl: "/service-3.avif",
-  },
-  {
-    title: "Exhibition & Event Design",
-    description:
-      "Temporary spaces designed with the same rigor as permanent ones.",
-    imgUrl: "/service-4.avif",
-  },
+  // {
+  //   title: "Interior Design & Space Planning",
+  //   description:
+  //     "Considered layouts and finishes tailored to how a space is actually lived in.",
+  //   imgUrl: "/service-3.avif",
+  // },
+  // {
+  //   title: "Exhibition & Event Design",
+  //   description:
+  //     "Temporary spaces designed with the same rigor as permanent ones.",
+  //   imgUrl: "/service-4.avif",
+  // },
 ];
 
 export const TEAM = [

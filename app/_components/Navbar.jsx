@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/journal", label: "Journal" },
+  { href: "/contact", label: "Contact" },
 ];
 
 function Navbar() {
@@ -76,6 +77,7 @@ function Navbar() {
                     alt="Luxaeon Spaces"
                     width={500}
                     height={400}
+                    loading="eager"
                   />
                 </motion.span>
 

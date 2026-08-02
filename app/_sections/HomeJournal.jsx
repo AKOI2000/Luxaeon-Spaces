@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { JOURNAL_POSTS } from "../_lib/data";
-
+import Image from "next/image";
 
 export default function HomeJournal() {
   return (
@@ -18,8 +18,8 @@ export default function HomeJournal() {
 
           <div className="journal__intro">
             <p>
-              Explore the latest industry news, gain valuable insights, and
-              read expert interviews from the world of design.
+              Explore the latest industry news, gain valuable insights, and read
+              expert interviews from the world of design.
             </p>
             <Link href="/journal" className="btn">
               All Posts
@@ -35,11 +35,20 @@ export default function HomeJournal() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40%" }}
-              transition={{ duration: 0.6, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: i * 0.05,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <Link href={`/journal/${post.slug}`}>
                 <div className="journal__image">
-                  <img src={post.imgUrl} alt={post.title} />
+                  <Image
+                    src={post.imgUrl}
+                    alt={post.title}
+                    height={900}
+                    width={1600}
+                  />
                 </div>
 
                 <h3>{post.title}</h3>

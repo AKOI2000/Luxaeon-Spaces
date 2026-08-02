@@ -1,7 +1,11 @@
+import CTA from "../_components/CTA";
+
 function page() {
   return (
     <>
-      <h1>Contact Page</h1>
+      <div className="page-start">
+        <CTA />
+      </div>
     </>
   );
 }

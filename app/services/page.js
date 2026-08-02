@@ -1,7 +1,16 @@
+import CTA from "../_components/CTA";
+import Services from "../_components/Services";
+
 function page() {
   return (
     <>
-      <h1>Services Page</h1>
+      <div className="page-start">
+        <Services />
+      </div>
+
+      <div className="container">
+        <CTA />
+      </div>
     </>
   );
 }
