@@ -6,11 +6,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NAV_LINKS = [
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
+  // { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
   { href: "/journal", label: "Journal" },
-  { href: "/contact", label: "Contact" },
+  // { href: "/contact", label: "Contact" },
 ];
 
 function Navbar() {
@@ -72,13 +72,15 @@ function Navbar() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                  <Image
-                    src={"/logo2.png"}
-                    alt="Luxaeon Spaces"
-                    width={500}
-                    height={400}
-                    loading="eager"
-                  />
+                  <Link href="/"   onClick={() => setOpen(false)}>
+                    <Image
+                      src={"/logo2.png"}
+                      alt="Luxaeon Spaces"
+                      width={500}
+                      height={400}
+                      loading="eager"
+                    />
+                  </Link>
                 </motion.span>
 
                 <motion.button
