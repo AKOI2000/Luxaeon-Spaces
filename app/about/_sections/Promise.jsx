@@ -79,7 +79,7 @@ export default function Promise() {
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
-              <span className="promise__icon">{ICONS[item.icon]}</span>
+              {/* <span className="promise__icon">{ICONS[item.icon]}</span> */}
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </motion.div>

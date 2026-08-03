@@ -15,7 +15,7 @@ function page() {
       <EditorialBlock
         eyebrow="Our Philosophy"
         heading="Design That Works for Life."
-        // image="/placeholder-philosophy.jpg"
+        image="/about-story.png"
         // reverse
         paragraphs={[
           "Our approach is rooted in contemporary design and functional living. Every layout, finish, and material is carefully considered to create spaces that are as practical as they are beautiful.",
@@ -28,7 +28,7 @@ function page() {
       <EditorialBlock
         eyebrow="Our Approach"
         heading="Where We Create the Most Value."
-        // image="/placeholder-approach.jpg"
+        image="/about-approach.png"
         paragraphs={[
           "We enjoy projects where we're involved from the very beginning. Working with carcass buildings allows us to shape a space before major construction decisions are made.",
           "We also specialise in thoughtful renovations, reimagining existing interiors to unlock their full potential without losing what makes them feel like home.",

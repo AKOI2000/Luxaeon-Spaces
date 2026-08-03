@@ -33,7 +33,7 @@ export default function AboutHero() {
           transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <Image
-            src="/hero-img.avif"
+            src="/about-hero.png"
             alt="Luxaeon Spaces"
             height={900}
             width={1600}

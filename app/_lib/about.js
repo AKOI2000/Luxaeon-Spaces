@@ -3,13 +3,13 @@ export const EXPERTISE = [
     title: "Interior Design & Space Planning",
     description:
       "Every successful project begins with a clear vision. We define the layout, flow, and design direction before the transformation begins, ensuring every part of the space serves a purpose.",
-    image: "/placeholder-expertise-1.jpg",
+    image: "/concept-dev.png",
   },
   {
     title: "Project Management",
     description:
       "Great design deserves great execution. We coordinate the people, timelines, and decisions that bring every project to completion with clarity and care.",
-    image: "/placeholder-expertise-2.jpg",
+    image: "/project-mgt.png",
   },
 ];
 
