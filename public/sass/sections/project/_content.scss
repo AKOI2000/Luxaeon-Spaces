@@ -1,0 +1,47 @@
+// ============================================
+// sections/project/_content.scss
+// Gallery, TextBlock, Callout
+// ============================================
+
+.project-gallery {
+  &__grid {
+    gap: 1rem;
+  }
+
+  &__image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-grey);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.project-text {
+  &__inner {
+    max-width: 70rem;
+    // text-align: justify;
+  }
+
+  &__body {
+    margin-top: 1.2rem;
+    // color: var(--color-text-muted);
+  }
+}
+
+.project-callout {
+  &__label {
+    margin-top: 1.6rem;
+    max-width: 60rem;
+  }
+
+  &__body {
+    margin-top: 1.6rem;
+    max-width: 50rem;
+    // color: var(--color-text-muted);
+  }
+}

@@ -25,13 +25,26 @@
 @use "./sections/home/home-journal";
 @use "./sections/home/cta";
 
-
 @use "./sections/about/about-hero";
 @use "./sections/about/editorial-block";
 @use "./sections/about/leadership";
 @use "./sections/about/promise";
 @use "./sections/about/expertise";
 @use "./sections/about/about-story";
+
+@use "./sections/project/project-hero";
+@use "./sections/project/content";
+@use "./sections/project/feature-palette";
+@use "./sections/project/more-projects";
+
+@use "./sections/journal/journal-hero";
+@use "./sections/journal/journal-content";
+@use "./sections/journal/journal-other";
+
+
+
+
+
 
 // Sections are @used from within their own page's stylesheet
 // (e.g. sections/home/main.scss), not aggregated here.

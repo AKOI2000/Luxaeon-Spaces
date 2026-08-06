@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { JOURNAL_POSTS } from "../_lib/data";
+import { FEATURED_JOURNALS } from "../_lib/journals";
 import Image from "next/image";
 
 export default function HomeJournal() {
+
   return (
     <section className="journal">
       <div className="container">
@@ -28,7 +29,7 @@ export default function HomeJournal() {
         </div>
 
         <div className="journal__grid grid-2">
-          {JOURNAL_POSTS.map((post, i) => (
+          {FEATURED_JOURNALS.map((post, i) => (
             <motion.article
               key={post.slug}
               className="journal__card"

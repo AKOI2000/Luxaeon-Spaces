@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PROJECTS } from "../_lib/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { PROJECT_DETAILS } from "../_lib/projects";
 
 function HomeWorks() {
   return (
@@ -18,14 +19,14 @@ function HomeWorks() {
         </div>
 
         <ul className="home_works-list">
-          {PROJECTS.map((project, index) => (
+          {PROJECT_DETAILS.map((project, index) => (
             <li className="home_works-row" key={index}>
               <Link
                 href={`/projects/${project.slug}`}
                 className="home_works-link"
               >
                 <div className="home-works-meta">
-                  <h3>{project.name}</h3>
+                  <h3>{project.title}</h3>
                   <span className="text-grey">{project.category}</span>
                 </div>
                 <motion.div
@@ -45,8 +46,8 @@ function HomeWorks() {
                   }}
                 >
                   <Image
-                    src={project.imgUrl}
-                    alt={project.name}
+                    src={project.heroImage}
+                    alt={project.title}
                     width={1600}
                     height={500}
                     sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"

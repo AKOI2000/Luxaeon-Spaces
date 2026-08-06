@@ -1,0 +1,41 @@
+// ============================================
+// sections/project/_more-projects.scss
+// ============================================
+
+@use "../../utils/mixin" as *;
+
+.more-projects {
+  border-top: 1px solid var(--color-border);
+
+  &__grid {
+    margin-top: 4rem;
+  }
+
+  &__card {
+    display: block;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-grey);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--dur-base) var(--ease-out);
+    }
+  }
+
+  &__card:hover &__image img {
+    transform: scale(1.03);
+  }
+}

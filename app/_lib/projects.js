@@ -1,0 +1,230 @@
+export const PROJECT_DETAILS = [
+  {
+    slug: "the-afro-luxe",
+    title: "The Afro-Luxe",
+    tagline: "A Modern Expression of African Living.",
+    service: "Concept Design",
+    category: "Residential Interior",
+    heroImage: "/afro-luxe-5.png",
+    vision:
+      "The Afro-Luxe explores how contemporary living can embrace African heritage without feeling traditional or outdated. Designed for a rectangular living space, the concept focuses on maximising every corner while creating a warm, functional environment where culture and modern design exist together.",
+    galleryOne: [
+      "/afro-luxe-1.png",
+      "/afro-luxe-2.png",
+    ],
+    secondSection: {
+      label: "The Challenge",
+      body: "How do you create a family-friendly space that feels open, comfortable, and connected to its roots? The goal was to transform a limited layout into a space that offers breathing room, better movement, and a sense of belonging.",
+    },
+    galleryTwo: [
+      "/afro-luxe-3.png",
+      "/afro-luxe-4.jpg",
+    ],
+    approach:
+      "The concept blends Afro-inspired elements with contemporary interiors, creating a balance between heritage and modern comfort. Natural materials, thoughtful furniture placement, and intentional styling come together to create a space that feels both familiar and elevated.",
+    keyFeatures: [
+      {
+        title: "Cultural Expression",
+        description: "African influences woven into a contemporary setting.",
+      },
+      {
+        title: "Custom Console Design",
+        description:
+          "A statement wooden console that adds warmth, character, and functionality.",
+      },
+      {
+        title: "Open Living Experience",
+        description:
+          "A carefully planned layout that prioritises comfort, circulation, and everyday family living.",
+      },
+    ],
+    designDirection: {
+      label: "Afro-Contemporary",
+      body: "A fusion of African identity, modern simplicity, and functional living.",
+    },
+    materialPalette: null,
+    galleryThree: [
+      "/afro-luxe-5.png",
+      "/afro-luxe-6.png",
+    ],
+    closing: {
+      label: "The Idea Behind the Space",
+      body: "The Afro-Luxe is a reminder that modern homes do not have to leave their stories behind. A space can be contemporary while still carrying the memories, materials, and traditions that make it feel like home.",
+    },
+    favouriteDetail: null,
+  },
+  {
+    slug: "woody-luxe",
+    title: "Woody Luxe",
+    tagline: "Where Warmth Meets Luxury.",
+    service: "Concept Design",
+    category: "Residential Interior",
+    heroImage: "/woody-luxe-hero.png",
+    vision:
+      "Woody Luxe explores a richer expression of contemporary living, where natural timber, deep earthy tones, and refined finishes create an atmosphere of quiet confidence and understated luxury. Inspired by interiors that feel bold yet welcoming, the concept embraces warmth over minimalism and character over excess.",
+    galleryOne: [
+      "/woody-luxe-1.png",
+      "/woody-luxe-2.png",
+    ],
+    secondSection: {
+      label: "The Design Goal",
+      body: "Designed for those who appreciate depth, texture, and timeless elegance, Woody Luxe moves beyond the bright, minimalist aesthetic often associated with luxury. Instead, it celebrates rich materials, layered lighting, and carefully curated details that create a home with presence and personality.",
+    },
+    galleryTwo: [
+      "/woody-luxe-3.png",
+      "/woody-luxe-4.png",
+    ],
+    approach:
+      "Every element is selected to evoke comfort, sophistication, and permanence. Warm timber finishes, deep brown palettes, and soft ambient lighting work together to create spaces that feel intimate while maintaining a luxurious presence. The result is a home that is visually striking, effortlessly functional, and designed for everyday living.",
+    keyFeatures: [
+      {
+        title: "Rich Timber Finishes",
+        description:
+          "Natural wood surfaces that bring warmth, texture, and timeless appeal.",
+      },
+      {
+        title: "Ambient Lighting",
+        description:
+          "Layered lighting designed to create depth, comfort, and atmosphere throughout the space.",
+      },
+      {
+        title: "Earth-Toned Palette",
+        description:
+          "Deep browns, warm neutrals, and refined textures that create a cohesive and luxurious interior.",
+      },
+    ],
+    designDirection: {
+      label: "Warm Contemporary Luxury",
+      body: "A refined blend of natural materials, earthy tones, and modern craftsmanship.",
+    },
+    materialPalette:
+      "Natural walnut and oak, textured wood veneers, brushed bronze accents, stone surfaces, leather details, smoked glass, warm neutral fabrics.",
+    galleryThree: [
+      "/woody-luxe-5.png",
+      "/woody-luxe-6.png",
+    ],
+    closing: {
+      label: "Why This Design Works",
+      body: "Luxury isn't defined by how much a space contains, but by how it makes you feel. Woody Luxe uses materiality, lighting, and thoughtful composition to create an environment that feels calm, sophisticated, and deeply inviting.",
+    },
+    favouriteDetail: {
+      title: "The Wood Finish",
+      description:
+        "The carefully layered timber surfaces give the space its identity, bringing warmth, depth, and a timeless elegance that defines the entire concept.",
+    },
+  },
+  {
+    slug: "the-sanctuary",
+    title: "The Sanctuary",
+    tagline: "Designed for Comfort. Crafted for Calm.",
+    service: "Concept Design",
+    category: "Residential Bathroom",
+    heroImage: "/bathroom-hero.jpg",
+    vision:
+      "The Sanctuary reimagines the everyday bathroom as a place of calm and restoration. Designed with comfort in mind, the space combines clean lines, thoughtful planning, and refined materials to create an atmosphere that feels both luxurious and deeply relaxing.",
+    galleryOne: ["/bathroom-2.jpg", "/bathroom-3.jpg"],
+    secondSection: {
+      label: "The Design Goal",
+      body: "Bathrooms are often treated as purely functional spaces. This concept challenges that idea by creating an environment that is visually refined, highly practical, and enjoyable to experience every day. Every element is designed to encourage moments of pause, comfort, and wellbeing.",
+    },
+    // galleryTwo: [
+    //   "/bathroom-4.jpg",
+    //   "/bathroom-5.jpg",
+    // ],
+    approach:
+      "Modern luxury guides every decision. Carefully planned zoning separates key activities within the room, improving comfort, movement, and functionality without compromising the overall aesthetic. Balanced lighting, elegant finishes, and purposeful wall detailing complete the experience.",
+    keyFeatures: [
+      {
+        title: "Layered Lighting",
+        description:
+          "Soft, well-balanced illumination that enhances both function and atmosphere.",
+      },
+      {
+        title: "Defined Activity Zones",
+        description:
+          "Separate areas for grooming, bathing, and daily routines create a more organised and intuitive space.",
+      },
+      {
+        title: "Feature Walls",
+        description:
+          "Thoughtfully designed wall finishes add texture, depth, and visual interest while maintaining a clean, contemporary look.",
+      },
+    ],
+    designDirection: {
+      label: "Modern Luxury",
+      body: "Simple forms, premium finishes, and a calming material palette come together to create a timeless bathroom experience.",
+    },
+    materialPalette:
+      "Large-format porcelain tiles, natural stone accents, textured wall finishes, brushed metal fixtures, warm timber details, frameless glass.",
+    galleryThree: ["/bathroom-4.jpg", "/bathroom-5.jpg"],
+    closing: {
+      label: "Why This Design Works",
+      body: "The Sanctuary proves that a bathroom can be more than a functional necessity. Through intelligent planning and refined detailing, it becomes a space that supports both everyday routines and moments of relaxation.",
+    },
+    favouriteDetail: {
+      title: "Thoughtful Zoning",
+      description:
+        "Separating different activities within the space creates a bathroom that feels organised, comfortable, and effortless to use.",
+    },
+  },
+  {
+    slug: "the-sovereign-suite",
+    title: "The Sovereign Suite",
+    tagline: "A Bedroom Designed for Rest, Wrapped in Luxury.",
+    service: "Concept Design",
+    category: "Residential Bedroom",
+    heroImage: "/bedroom-hero.jpg",
+    vision:
+      "The Sovereign Suite redefines the modern bedroom as more than a place to sleep. It is designed as a private retreat where luxury, comfort, and functionality come together to create a calm and elevated living experience. Every detail is considered to encourage rest without compromising sophistication.",
+    galleryOne: [
+      "/bedroom-1.jpg",
+      "/bedroom-2.jpg",
+    ],
+    secondSection: {
+      label: "The Design Goal",
+      body: "Luxury should feel effortless, not excessive. This concept balances refined aesthetics with everyday functionality, creating a bedroom that feels warm, inviting, and thoughtfully designed for modern living.",
+    },
+    // galleryTwo: [
+    //   "/bedroom-3.png",
+    //   "/bedroom-4.png",
+    // ],
+    approach:
+      "Inspired by warm contemporary interiors, the space layers soft textures, ambient lighting, and carefully selected materials to create depth and comfort. Every furniture placement and design decision supports a seamless daily routine while maintaining a timeless sense of elegance.",
+    keyFeatures: [
+      {
+        title: "Ambient Bedside Lighting",
+        description:
+          "Warm lighting creates a calm atmosphere while providing practical illumination for everyday use.",
+      },
+      {
+        title: "Dedicated Lounge Corner",
+        description:
+          "A comfortable leg-rest lounge offers a quiet space to read, unwind, or simply pause.",
+      },
+      {
+        title: "Warm Material Palette",
+        description:
+          "Natural textures and earthy tones create a bedroom that feels welcoming throughout the day.",
+      },
+    ],
+    designDirection: {
+      label: "Warm Contemporary Luxury",
+      body: "Clean architecture, layered textures, and timeless materials brought together with understated elegance.",
+    },
+    materialPalette:
+      "Natural oak veneers, textured wall panels, soft linen upholstery, warm neutral fabrics, brushed bronze accents, smoked glass, premium wood finishes.",
+    galleryThree: [
+      "/bedroom-3.png",
+      "/bedroom-4.png",
+    ],
+    closing: {
+      label: "Why This Design Works",
+      body: "The Sovereign Suite combines comfort with thoughtful planning to create a bedroom that feels luxurious without being overwhelming. The balance of warm materials, soft lighting, and functional zoning transforms the room into a personal retreat that supports both relaxation and everyday living.",
+    },
+    favouriteDetail: {
+      title: "The Lounge Corner",
+      description:
+        "More than an accent feature, the dedicated lounge area extends the purpose of the bedroom beyond sleep, creating a quiet space for reading, reflection, or simply enjoying the comfort of home.",
+    },
+  },
+];

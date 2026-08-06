@@ -22,7 +22,7 @@ export const LEADERSHIP = [
   },
   {
     name: "Yusuf Olayiwola Rasaq",
-    role: "Creative Director",
+    role: "Co-founder",
     bio: "Yusuf leads the creative direction of the studio, ensuring every project reflects thoughtful planning, refined aesthetics, and purposeful execution.",
     imgUrl: "/Rasak.jpeg",
   },

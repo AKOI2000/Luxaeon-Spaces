@@ -26,6 +26,7 @@ function HomeAbout() {
               alt="About Luxaeon"
               width={1600}
               height={900}
+              loading="eager"
               sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
