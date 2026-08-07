@@ -31,7 +31,7 @@ $breakpoints: (
   --font-body: var(--font-jakarta), -apple-system, "Helvetica Neue", sans-serif;
 
   // --- Motion ---
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: ease-in-out;
   --dur-fast: 0.2s;
   --dur-base: 0.5s;
 }

@@ -6,7 +6,7 @@ export const post = {
   readingTime: "6–8 minutes",
   metaDescription:
     "True luxury isn't defined by expensive furniture or designer brands. Discover how thoughtful interior design creates timeless spaces that feel refined, functional, and deeply personal.",
-  heroImage: "/placeholder-journal-luxury-hero.jpg",
+  heroImage: "/fifth-journey-hero.png",
   hook: "The Most Luxurious Homes Have One Thing in Common.",
   intro: [
     "They don't try too hard.",
@@ -62,7 +62,7 @@ export const post = {
         "Designing with timeless materials creates interiors that continue to feel elegant long after passing trends have disappeared.",
       ],
       list: null,
-      image: "/placeholder-journal-luxury-1.jpg",
+      image: "/fifth-journey-1.png",
     },
     {
       heading: "Comfort Is the Ultimate Luxury",
@@ -105,7 +105,7 @@ export const post = {
         "It's about expressing your own.",
       ],
       list: null,
-      image: "/placeholder-journal-luxury-2.jpg",
+      image: "/fifth-journey-2.png",
     },
     {
       heading: "Value Is Better Than Excess",

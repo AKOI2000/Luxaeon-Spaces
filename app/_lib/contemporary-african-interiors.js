@@ -6,7 +6,7 @@ export const post = {
   readingTime: "8–10 minutes",
   metaDescription:
     "Discover how contemporary African interior design blends heritage, craftsmanship, natural materials, and modern living to create timeless spaces with character and purpose.",
-  heroImage: "/placeholder-journal-african-interiors-hero.jpg",
+  heroImage: "/sixth-journal-hero.png",
   hook: "A Home Can Look Modern Without Forgetting Where It Comes From.",
   intro: [
     "For many years, modern interior design was often associated with copying trends from around the world.",
@@ -64,7 +64,7 @@ export const post = {
         "Design should strengthen the way people live together.",
       ],
       list: null,
-      image: "/placeholder-journal-african-interiors-1.jpg",
+      image: "/sixth-journal-1.png",
     },
     {
       heading: "Natural Materials Never Go Out of Style",
@@ -112,7 +112,7 @@ export const post = {
         "The result is a space that feels luxurious without losing its soul.",
       ],
       list: null,
-      image: "/placeholder-journal-african-interiors-2.jpg",
+      image: "/sixth-journal-2.png",
     },
     {
       heading: "Every Space Should Tell a Story",

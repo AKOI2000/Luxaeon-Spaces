@@ -6,7 +6,7 @@ export const post = {
   readingTime: "7–9 minutes",
   metaDescription:
     "Poor space planning costs more than money. Discover how thoughtful interior planning improves comfort, functionality, and long-term value before construction even begins.",
-  heroImage: "/placeholder-journal-hidden-cost-hero.jpg",
+  heroImage: "/fourth-journal-hero.png",
   hook: "The Most Expensive Mistakes Are Often the Ones You Can't See.",
   intro: [
     "When building or renovating a home, most people focus on finishes.",
@@ -62,7 +62,7 @@ export const post = {
         "When every square metre is carefully considered, the home becomes more efficient without becoming larger.",
       ],
       list: null,
-      image: "/placeholder-journal-hidden-cost-1.jpg",
+      image: "/fourth-journal-1.png",
     },
     {
       heading: "Poor Planning Leads to Expensive Changes",
@@ -104,7 +104,7 @@ export const post = {
         "Thoughtful planning creates places for everything, allowing the home itself to feel calmer and more spacious.",
       ],
       list: null,
-      image: "/placeholder-journal-hidden-cost-2.jpg",
+      image: "/fourth-journal-2.png",
     },
     {
       heading: "Space Planning Is About Living Better",
