@@ -173,12 +173,12 @@ export const PROJECT_DETAILS = [
     tagline: "A Bedroom Designed for Rest, Wrapped in Luxury.",
     service: "Concept Design",
     category: "Residential Bedroom",
-    heroImage: "/bedroom-hero.jpg",
+    heroImage: "/bedroom-hero.JPG",
     vision:
       "The Sovereign Suite redefines the modern bedroom as more than a place to sleep. It is designed as a private retreat where luxury, comfort, and functionality come together to create a calm and elevated living experience. Every detail is considered to encourage rest without compromising sophistication.",
     galleryOne: [
-      "/bedroom-1.jpg",
-      "/bedroom-2.jpg",
+      "/bedroom-1.JPG",
+      "/bedroom-2.JPG",
     ],
     secondSection: {
       label: "The Design Goal",
