@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function PostSection({ heading, paragraphs, list, image }) {
   return (
@@ -38,7 +39,12 @@ export default function PostSection({ heading, paragraphs, list, image }) {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <img src={image} alt="" />
+            <Image src={image}
+                alt={heading}
+                width={1600}
+                height={900}
+                // loading="eager"
+                sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
           </motion.div>
         )}
       </div>

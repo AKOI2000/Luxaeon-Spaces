@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { LEADERSHIP } from "@/app/_lib/about";
-import { TEAM } from "@/app/_lib/data";
+import Image from "next/image";
 
 export default function Leadership() {
   return (
@@ -20,7 +20,14 @@ export default function Leadership() {
             {LEADERSHIP.map((member, i) => (
               <li key={member.name} className="about-team-item">
                 <div className="about-team-photo">
-                  <img src={member.imgUrl} alt={member.name} />
+                  <Image
+                    src={member.imgUrl}
+                    alt={member.name}
+                    width={1600}
+                    height={900}
+                    // loading="eager"
+                    sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 <h3>{member.name}</h3>
                 <span className="text-grey">{member.role}</span>

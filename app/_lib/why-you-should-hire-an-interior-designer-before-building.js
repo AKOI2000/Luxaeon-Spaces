@@ -6,7 +6,7 @@ export const post = {
   readingTime: "8–10 minutes",
   metaDescription:
     "Involving an interior designer before construction begins can save money, improve functionality, and create a home that's designed to fit your lifestyle from the ground up.",
-  heroImage: "/placeholder-journal-day-one-hero.jpg",
+  heroImage: "/third-journal-hero.png",
   hook: "Great Homes Are Designed Long Before They're Decorated.",
   intro: [
     "When people think about hiring an interior designer, they often imagine the final stages of a project, choosing furniture, selecting colours, or styling a finished room.",
@@ -57,7 +57,7 @@ export const post = {
         "It's a home that performs better every single day.",
       ],
       list: null,
-      image: "/placeholder-journal-day-one-1.jpg",
+      image: "/third-journal-1.png",
     },
     {
       heading: "Lighting Should Never Be an Afterthought",
@@ -113,7 +113,7 @@ export const post = {
         "A well-planned project is almost always more efficient than one that relies on corrections later.",
       ],
       list: null,
-      image: "/placeholder-journal-day-one-2.jpg",
+      image: "/third-journal-2.png",
     },
     {
       heading: "The Best Projects Begin With a Blank Canvas",

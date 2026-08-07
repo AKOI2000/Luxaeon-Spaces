@@ -6,7 +6,7 @@ export const post = {
   readingTime: "6–8 minutes",
   metaDescription:
     "Discover practical interior design strategies that make compact homes feel larger, brighter, and more functional without adding a single square metre.",
-  heroImage: "/placeholder-journal-small-space-hero.jpg",
+  heroImage: "/first-journal-hero.png",
   hook: "Good Design Doesn't Begin With More Space. It Begins With Better Planning.",
   intro: [
     "Many people believe a bigger home is the answer to better living. In reality, the most comfortable homes aren't always the largest. They're simply the best designed.",
@@ -48,7 +48,7 @@ export const post = {
         "Luxury interiors rarely feel crowded. They feel considered.",
       ],
       list: null,
-      image: "/placeholder-journal-small-space-1.jpg",
+      image: "/first-journal-1.png",
     },
     {
       heading: "Make Natural Light Your Greatest Design Feature",
@@ -94,7 +94,7 @@ export const post = {
         "The answers to these questions often have a greater impact on how spacious a home feels than its actual dimensions.",
       ],
       list: null,
-      image: "/placeholder-journal-small-space-2.jpg",
+      image: "/first-journal-2.jpg",
     },
     {
       heading: "Don't Chase Trends",

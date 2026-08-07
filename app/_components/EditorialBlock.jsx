@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function EditorialBlock({
   eyebrow,
@@ -34,7 +35,14 @@ export default function EditorialBlock({
           </div>
 
           <div className="editorial-block__image">
-            <img src={image ? image : "/service-1.avif"} alt={heading} />
+            <Image
+              src={image ? image : "/service-1.avif"}
+              alt={heading}
+              width={1600}
+              height={900}
+              // loading="eager"
+              sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
           </div>
         </motion.div>
       </div>

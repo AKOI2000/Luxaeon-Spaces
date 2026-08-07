@@ -31,27 +31,6 @@ function HomeAbout() {
             />
           </div>
         </div>
-
-        {/* <div className="home_about-team">
-          <div className="section-heading">
-            <h2>Meet our team</h2>
-            <p>
-              A group of dedicated and skilled professionals who bring their
-              unique talents to make our company a wonderful place to work.
-            </p>
-          </div>
-          <ul className="home_about-team-grid grid-2">
-            {TEAM.map((member, i) => (
-              <li key={member.name} className="home_about-team-item">
-                <div className="home_about-team-photo">
-                  <img src="/placeholder-avatar.jpg" alt={member.name} />
-                </div>
-                <h3>{member.name}</h3>
-                <span className="text-grey">{member.role}</span>
-              </li>
-            ))}
-          </ul>
-        </div> */}
       </div>
     </section>
   );

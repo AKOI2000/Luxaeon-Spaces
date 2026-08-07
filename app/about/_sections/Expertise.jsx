@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { EXPERTISE } from "@/app/_lib/about";
+import Image from "next/image";
 
 export default function Expertise() {
   return (
@@ -25,7 +26,14 @@ export default function Expertise() {
               }}
             >
               <div className="expertise__image">
-                <img src={item.image} alt={item.title} />
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={1600}
+                  height={900}
+                  // loading="eager"
+                  sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

@@ -6,7 +6,7 @@ export const post = {
   readingTime: "7–9 minutes",
   metaDescription:
     "Discover seven common interior design mistakes that make homes feel cramped, and learn practical ways to create a space that feels open, functional, and inviting.",
-  heroImage: "/placeholder-journal-design-mistakes-hero.jpg",
+  heroImage: "/second-journal-hero.png",
   hook: "Sometimes It Isn't the Size of Your Home. It's the Way It's Designed.",
   intro: [
     "A home doesn't have to be large to feel comfortable.",
@@ -49,7 +49,7 @@ export const post = {
         "Warm timber, natural stone, soft fabrics, and neutral tones are timeless combinations because they work together rather than against each other.",
       ],
       list: null,
-      image: "/placeholder-journal-design-mistakes-pg",
+      image: "/second-journal-1.png",
     },
     {
       heading: "Ignoring Natural Light",
@@ -88,7 +88,7 @@ export const post = {
         "The best storage solutions are often the ones you barely notice.",
       ],
       list: null,
-      image: "/placeholder-journal-design-mistakes-jpg",
+      image: "/second-journal-2.png",
     },
     {
       heading: "Designing Only for Appearance",

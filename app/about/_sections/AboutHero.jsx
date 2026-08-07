@@ -35,6 +35,7 @@ export default function AboutHero() {
           <Image
             src="/about-hero.png"
             alt="Luxaeon Spaces"
+              loading="eager"
             height={900}
             width={1600}
             sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"

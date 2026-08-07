@@ -96,6 +96,7 @@ function HomeHero() {
           alt="Luxaeon Spaces"
           height={900}
           width={1600}
+          loading="eager"
           sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </motion.div>
