@@ -227,4 +227,69 @@ export const PROJECT_DETAILS = [
         "More than an accent feature, the dedicated lounge area extends the purpose of the bedroom beyond sleep, creating a quiet space for reading, reflection, or simply enjoying the comfort of home.",
     },
   },
+  {
+  slug: "the-hearth-kitchen",
+  title: "The Hearth Kitchen",
+  tagline: "Where Everyday Cooking Meets Everyday Living.",
+  service: "Concept Design",
+  category: "Residential Kitchen",
+  heroImage: "/kitchen-hero.JPG",
+  vision:
+    "The Hearth Kitchen reimagines the modern kitchen as more than a place to prepare meals. It is designed as a social space where cooking, dining, and everyday conversations happen naturally. The concept focuses on maximising the available footprint while creating a kitchen that feels open, comfortable, and connected.",
+  galleryOne: [
+    "/kitchen-1.JPG",
+    "/kitchen-2.JPG",
+  ],
+  secondSection: {
+    label: "The Design Goal",
+    body: "Many kitchens sacrifice movement for storage or place the dining area in ways that interrupt the cooking experience. The Hearth Kitchen challenges this by creating a layout that improves workflow, provides generous circulation, and introduces a dedicated dining space without compromising functionality. The result is a kitchen that works effortlessly for both everyday living and family gatherings.",
+  },
+  galleryTwo: [
+    "/kitchen-3.JPG",
+    "/kitchen-4.JPG",
+  ],
+  approach:
+    "Designed with a contemporary luxury aesthetic, every element is positioned to support efficiency and comfort. Thoughtfully planned circulation allows movement between preparation, cooking, and dining areas without obstruction, while integrated storage keeps the space clean and organised. The design balances practicality with refined finishes to create a kitchen that feels timeless and inviting.",
+  keyFeatures: [
+    {
+      title: "Dedicated Dining Area",
+      description:
+        "A spacious dining zone that encourages family meals and everyday connection without interrupting the kitchen workflow.",
+    },
+    {
+      title: "Optimised Circulation",
+      description:
+        "Generous legroom and carefully planned movement paths make the space comfortable to use, even with multiple people present.",
+    },
+    {
+      title: "Custom Storage Solutions",
+      description:
+        "Bespoke shelving and concealed cabinetry maximise storage while maintaining a clean, uncluttered appearance.",
+    },
+    {
+      title: "Layered Lighting",
+      description:
+        "A combination of ambient, task, and accent lighting enhances both functionality and atmosphere throughout the day.",
+    },
+  ],
+  designDirection: {
+    label: "Contemporary Modern Luxury",
+    body: "Clean architectural lines, premium finishes, and functional planning come together to create a kitchen that feels elegant without losing its practicality.",
+  },
+  materialPalette:
+    "Marble countertops, warm timber cabinetry, concealed storage systems, matte finishes, brushed metal hardware, textured stone splashbacks, and durable premium surfaces selected for both beauty and everyday performance.",
+  galleryThree: [
+    "/kitchen-5.JPG",
+    "/kitchen-6.JPG",
+  ],
+  closing: {
+    label: "Why This Design Works",
+    body: "A successful kitchen should support the rhythm of daily life. By separating cooking, dining, and circulation zones while maintaining visual openness, The Hearth Kitchen creates an environment that feels organised, spacious, and welcoming. Every design decision contributes to a smoother workflow, making the kitchen as enjoyable to use as it is to look at.",
+  },
+  favouriteDetail: {
+    title: "The Dining Integration",
+    description:
+      "Rather than treating dining as an afterthought, this concept gives it a purposeful place within the kitchen. It creates a natural setting for shared meals, conversations, and everyday moments, reinforcing the kitchen as the true heart of the home.",
+  },
+},
 ];
