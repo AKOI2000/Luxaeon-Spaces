@@ -5,19 +5,19 @@ export const PROJECT_DETAILS = [
     tagline: "A Modern Expression of African Living.",
     service: "Concept Design",
     category: "Residential Interior",
-    heroImage: "/afro-luxe-5.png",
+    heroImage: "/afro-luxe-5.PNG",
     vision:
       "The Afro-Luxe explores how contemporary living can embrace African heritage without feeling traditional or outdated. Designed for a rectangular living space, the concept focuses on maximising every corner while creating a warm, functional environment where culture and modern design exist together.",
     galleryOne: [
       "/afro-luxe-1.PNG",
-      "/afro-luxe-2.png",
+      "/afro-luxe-2.PNG",
     ],
     secondSection: {
       label: "The Challenge",
       body: "How do you create a family-friendly space that feels open, comfortable, and connected to its roots? The goal was to transform a limited layout into a space that offers breathing room, better movement, and a sense of belonging.",
     },
     galleryTwo: [
-      "/afro-luxe-3.png",
+      "/afro-luxe-3.PNG",
       "/afro-luxe-4.jpg",
     ],
     approach:
@@ -44,8 +44,8 @@ export const PROJECT_DETAILS = [
     },
     materialPalette: null,
     galleryThree: [
-      "/afro-luxe-5.png",
-      "/afro-luxe-6.png",
+      "/afro-luxe-5.PNG",
+      "/afro-luxe-6.PNG",
     ],
     closing: {
       label: "The Idea Behind the Space",
