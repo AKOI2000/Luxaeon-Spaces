@@ -9,7 +9,7 @@ export const PROJECT_DETAILS = [
     vision:
       "The Afro-Luxe explores how contemporary living can embrace African heritage without feeling traditional or outdated. Designed for a rectangular living space, the concept focuses on maximising every corner while creating a warm, functional environment where culture and modern design exist together.",
     galleryOne: [
-      "/afro-luxe-1.png",
+      "/afro-luxe-1.PNG",
       "/afro-luxe-2.png",
     ],
     secondSection: {
