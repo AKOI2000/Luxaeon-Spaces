@@ -119,17 +119,17 @@ export const PROJECT_DETAILS = [
     tagline: "Designed for Comfort. Crafted for Calm.",
     service: "Concept Design",
     category: "Residential Bathroom",
-    heroImage: "/bathroom-hero.jpg",
+    heroImage: "/bathroom-hero.JPG",
     vision:
       "The Sanctuary reimagines the everyday bathroom as a place of calm and restoration. Designed with comfort in mind, the space combines clean lines, thoughtful planning, and refined materials to create an atmosphere that feels both luxurious and deeply relaxing.",
-    galleryOne: ["/bathroom-2.jpg", "/bathroom-3.jpg"],
+    galleryOne: ["/bathroom-2.JPG", "/bathroom-3.JPG"],
     secondSection: {
       label: "The Design Goal",
       body: "Bathrooms are often treated as purely functional spaces. This concept challenges that idea by creating an environment that is visually refined, highly practical, and enjoyable to experience every day. Every element is designed to encourage moments of pause, comfort, and wellbeing.",
     },
     // galleryTwo: [
-    //   "/bathroom-4.jpg",
-    //   "/bathroom-5.jpg",
+    //   "/bathroom-4.JPG",
+    //   "/bathroom-5.JPG",
     // ],
     approach:
       "Modern luxury guides every decision. Carefully planned zoning separates key activities within the room, improving comfort, movement, and functionality without compromising the overall aesthetic. Balanced lighting, elegant finishes, and purposeful wall detailing complete the experience.",
@@ -156,7 +156,7 @@ export const PROJECT_DETAILS = [
     },
     materialPalette:
       "Large-format porcelain tiles, natural stone accents, textured wall finishes, brushed metal fixtures, warm timber details, frameless glass.",
-    galleryThree: ["/bathroom-4.jpg", "/bathroom-5.jpg"],
+    galleryThree: ["/bathroom-4.JPG", "/bathroom-5.JPG"],
     closing: {
       label: "Why This Design Works",
       body: "The Sanctuary proves that a bathroom can be more than a functional necessity. Through intelligent planning and refined detailing, it becomes a space that supports both everyday routines and moments of relaxation.",
