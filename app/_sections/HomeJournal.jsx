@@ -6,7 +6,6 @@ import { FEATURED_JOURNALS } from "../_lib/journals";
 import Image from "next/image";
 
 export default function HomeJournal() {
-
   return (
     <section className="journal">
       <div className="container">
@@ -45,10 +44,11 @@ export default function HomeJournal() {
               <Link href={`/journal/${post.slug}`}>
                 <div className="journal__image">
                   <Image
-                    src={post.imgUrl}
+                    src={post.heroImage}
                     alt={post.title}
                     height={900}
                     width={1600}
+                    sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
 
