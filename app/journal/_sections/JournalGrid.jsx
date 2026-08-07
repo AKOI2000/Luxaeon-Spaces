@@ -29,6 +29,7 @@ export default function JournalGrid() {
                     alt={post.title}
                     width={1600}
                     height={900}
+                     sizes="(max-width: 763px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
 
