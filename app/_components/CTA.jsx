@@ -21,15 +21,15 @@ function CTA() {
             <div className="home_cta-contact-box">
               <div className="list">
                 <h4>Call us</h4>
-                <a href="tel:+" target="_blank">
-                  +1 (555) 000-0000
+                <a href="tel:+2349021144350" target="_blank">
+                  +234 902 114 4350
                 </a>
               </div>
 
               <div className="list">
                 <h4>Email us</h4>
-                <a href="mailto:" target="_blank">
-                  example@gmail.com
+                <a href="mailto:luxaeonspaces@gmail.com" target="_blank">
+                  luxaeonspaces@gmail.com
                 </a>
               </div>
               <div className="list">

@@ -30,6 +30,7 @@ function Navbar() {
             alt="Luxaeon Spaces"
             width={500}
             height={400}
+            loading="eager"
           />
         </Link>
 

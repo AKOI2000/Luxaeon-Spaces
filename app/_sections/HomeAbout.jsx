@@ -6,7 +6,7 @@ function HomeAbout() {
   return (
     <section className="container">
       <div className="home_about">
-        <p className="eyebrow margin-lg">About</p>
+        <p className="eyebrow margin-lg">About Luxeon Spaces</p>
         <div className="home_about-story grid-5">
           <div className="text-box">
             <h1>Our Story</h1>
