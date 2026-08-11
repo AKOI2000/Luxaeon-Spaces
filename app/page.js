@@ -14,7 +14,7 @@ function page() {
       <HomeWorks />
       <HomeServices />
       <HomeAbout />
-      <HomeTestimonial />
+      {/* <HomeTestimonial /> */}
       <HomeFAQs />
       <HomeJournal />
       <HomeCTA />
