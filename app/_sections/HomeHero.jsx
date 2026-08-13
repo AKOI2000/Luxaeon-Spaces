@@ -52,7 +52,7 @@ function HomeHero() {
             duration: 0.8,
           }}
         >
-          Spaces
+          Luxaeon Spaces
         </motion.h1>
         <motion.p
           className="hero_tagline"
@@ -72,7 +72,7 @@ function HomeHero() {
             duration: 0.5,
           }}
         >
-          That Speak Before You Do
+          designed to feel like you
         </motion.p>
       </div>
 
