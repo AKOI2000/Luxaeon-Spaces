@@ -11,7 +11,7 @@ function HomeHero() {
 
   useEffect(() => {
     const headingFit = fitty(headingRef.current, {
-      minSize: 40,
+      minSize: 30,
       maxSize: 1000,
       multiLine: false,
     });
